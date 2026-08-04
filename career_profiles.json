@@ -1,0 +1,236 @@
+{
+  "AI Engineer": {
+    "required_tech": [
+      "machine learning",
+      "deep learning",
+      "natural language processing",
+      "computer vision",
+      "sql",
+      "big data",
+      "data engineering",
+      "data pipelines",
+      "mlops",
+      "devops"
+    ],
+    "required_prog": [
+      "python",
+      "java",
+      "r"
+    ],
+    "required_soft": [
+      "communication",
+      "collaboration",
+      "leadership"
+    ],
+    "required_tools": [
+      "tensorflow",
+      "excel",
+      "pytorch",
+      "aws",
+      "azure",
+      "git",
+      "spark",
+      "scikit-learn",
+      "kubernetes"
+    ],
+    "avg_exp_level": 2.6,
+    "avg_salary": 174500,
+    "total_postings": 153
+  },
+  "Business Analyst": {
+    "required_tech": [
+      "sql",
+      "data analysis"
+    ],
+    "required_prog": [],
+    "required_soft": [
+      "communication",
+      "project management",
+      "leadership",
+      "presentation",
+      "collaboration"
+    ],
+    "required_tools": [
+      "excel",
+      "git"
+    ],
+    "avg_exp_level": 2.7,
+    "avg_salary": 101920,
+    "total_postings": 553
+  },
+  "Cloud / DevOps Engineer": {
+    "required_tech": [
+      "devops",
+      "networking",
+      "sql"
+    ],
+    "required_prog": [
+      "python",
+      "bash",
+      "java"
+    ],
+    "required_soft": [
+      "communication",
+      "collaboration",
+      "leadership"
+    ],
+    "required_tools": [
+      "aws",
+      "git",
+      "azure",
+      "kubernetes",
+      "excel",
+      "docker",
+      "gcp"
+    ],
+    "avg_exp_level": 2.7,
+    "avg_salary": 138850,
+    "total_postings": 406
+  },
+  "Cybersecurity Expert": {
+    "required_tech": [
+      "cybersecurity",
+      "networking"
+    ],
+    "required_prog": [
+      "python"
+    ],
+    "required_soft": [
+      "communication",
+      "leadership",
+      "collaboration"
+    ],
+    "required_tools": [
+      "excel",
+      "aws",
+      "azure",
+      "git"
+    ],
+    "avg_exp_level": 2.5,
+    "avg_salary": 120200,
+    "total_postings": 225
+  },
+  "Data Analyst": {
+    "required_tech": [
+      "sql",
+      "data analysis",
+      "data visualization"
+    ],
+    "required_prog": [
+      "python"
+    ],
+    "required_soft": [
+      "communication",
+      "leadership",
+      "presentation",
+      "attention to detail"
+    ],
+    "required_tools": [
+      "excel",
+      "tableau",
+      "git",
+      "aws",
+      "power bi"
+    ],
+    "avg_exp_level": 2.0,
+    "avg_salary": 99840,
+    "total_postings": 407
+  },
+  "Data Engineer": {
+    "required_tech": [
+      "sql",
+      "data engineering",
+      "etl",
+      "data pipelines",
+      "big data",
+      "machine learning"
+    ],
+    "required_prog": [
+      "python",
+      "java",
+      "scala"
+    ],
+    "required_soft": [
+      "communication",
+      "collaboration",
+      "leadership"
+    ],
+    "required_tools": [
+      "aws",
+      "spark",
+      "azure",
+      "excel",
+      "git",
+      "snowflake",
+      "databricks",
+      "hadoop",
+      "kafka",
+      "airflow"
+    ],
+    "avg_exp_level": 2.6,
+    "avg_salary": 140000,
+    "total_postings": 396
+  },
+  "Data Scientist": {
+    "required_tech": [
+      "machine learning",
+      "sql",
+      "data analysis",
+      "data visualization",
+      "deep learning",
+      "big data",
+      "statistical analysis",
+      "natural language processing"
+    ],
+    "required_prog": [
+      "python",
+      "r"
+    ],
+    "required_soft": [
+      "communication",
+      "collaboration",
+      "presentation",
+      "leadership"
+    ],
+    "required_tools": [
+      "excel",
+      "aws",
+      "spark",
+      "git",
+      "tableau",
+      "pytorch",
+      "tensorflow"
+    ],
+    "avg_exp_level": 2.3,
+    "avg_salary": 162200,
+    "total_postings": 247
+  },
+  "Software Developer": {
+    "required_tech": [
+      "sql"
+    ],
+    "required_prog": [
+      "java",
+      "python",
+      "javascript",
+      "go",
+      "typescript"
+    ],
+    "required_soft": [
+      "communication",
+      "collaboration",
+      "leadership"
+    ],
+    "required_tools": [
+      "git",
+      "excel",
+      "aws",
+      "azure",
+      "docker",
+      "kubernetes"
+    ],
+    "avg_exp_level": 2.6,
+    "avg_salary": 150800,
+    "total_postings": 2002
+  }
+}
