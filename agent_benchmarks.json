@@ -1,0 +1,327 @@
+{
+  "career_profiles": {
+    "AI Engineer": {
+      "required_tech": [
+        "machine learning",
+        "deep learning",
+        "cloud computing",
+        "natural language processing",
+        "data engineering",
+        "devops",
+        "model deployment",
+        "computer vision",
+        "data analysis",
+        "statistical analysis",
+        "data pipelines",
+        "sql",
+        "feature engineering",
+        "mlops"
+      ],
+      "required_prog": [
+        "python",
+        "java",
+        "r"
+      ],
+      "required_soft": [
+        "communication",
+        "creativity",
+        "collaboration",
+        "problem solving",
+        "teamwork",
+        "project management",
+        "leadership",
+        "adaptability"
+      ],
+      "required_tools": [
+        "tensorflow",
+        "pytorch",
+        "excel",
+        "aws",
+        "azure",
+        "git",
+        "spark",
+        "kubernetes"
+      ],
+      "avg_exp_level": 2.6,
+      "avg_salary": 174500,
+      "total_postings": 139
+    },
+    "Business Analyst": {
+      "required_tech": [
+        "sql",
+        "data analysis",
+        "data visualization"
+      ],
+      "required_prog": [],
+      "required_soft": [
+        "communication",
+        "project management",
+        "problem solving",
+        "leadership",
+        "teamwork",
+        "presentation",
+        "collaboration",
+        "attention to detail",
+        "creativity",
+        "analytical thinking"
+      ],
+      "required_tools": [
+        "excel",
+        "git"
+      ],
+      "avg_exp_level": 2.7,
+      "avg_salary": 101920,
+      "total_postings": 553
+    },
+    "Cloud / DevOps Engineer": {
+      "required_tech": [
+        "devops",
+        "cloud computing",
+        "model deployment",
+        "networking",
+        "sql"
+      ],
+      "required_prog": [
+        "python",
+        "bash",
+        "java"
+      ],
+      "required_soft": [
+        "communication",
+        "project management",
+        "problem solving",
+        "collaboration",
+        "creativity",
+        "teamwork",
+        "leadership"
+      ],
+      "required_tools": [
+        "aws",
+        "git",
+        "azure",
+        "kubernetes",
+        "excel",
+        "docker",
+        "gcp"
+      ],
+      "avg_exp_level": 2.7,
+      "avg_salary": 138850,
+      "total_postings": 406
+    },
+    "Cybersecurity Expert": {
+      "required_tech": [
+        "cybersecurity",
+        "networking",
+        "cloud computing"
+      ],
+      "required_prog": [
+        "python"
+      ],
+      "required_soft": [
+        "communication",
+        "leadership",
+        "problem solving",
+        "project management",
+        "creativity",
+        "collaboration",
+        "teamwork"
+      ],
+      "required_tools": [
+        "excel",
+        "aws",
+        "azure",
+        "git"
+      ],
+      "avg_exp_level": 2.5,
+      "avg_salary": 120200,
+      "total_postings": 225
+    },
+    "Data Analyst": {
+      "required_tech": [
+        "sql",
+        "data analysis",
+        "data visualization",
+        "statistical analysis",
+        "cloud computing",
+        "data engineering"
+      ],
+      "required_prog": [
+        "python"
+      ],
+      "required_soft": [
+        "communication",
+        "attention to detail",
+        "project management",
+        "leadership",
+        "problem solving",
+        "teamwork",
+        "analytical thinking",
+        "adaptability",
+        "presentation"
+      ],
+      "required_tools": [
+        "excel",
+        "tableau",
+        "git",
+        "aws",
+        "power bi"
+      ],
+      "avg_exp_level": 2.0,
+      "avg_salary": 99840,
+      "total_postings": 407
+    },
+    "Data Engineer": {
+      "required_tech": [
+        "data engineering",
+        "sql",
+        "cloud computing",
+        "data pipelines",
+        "etl",
+        "devops",
+        "data visualization",
+        "data analysis",
+        "machine learning"
+      ],
+      "required_prog": [
+        "python",
+        "java",
+        "scala"
+      ],
+      "required_soft": [
+        "communication",
+        "project management",
+        "teamwork",
+        "creativity",
+        "problem solving",
+        "collaboration",
+        "leadership"
+      ],
+      "required_tools": [
+        "aws",
+        "spark",
+        "azure",
+        "excel",
+        "git",
+        "snowflake",
+        "databricks",
+        "hadoop",
+        "kafka",
+        "airflow"
+      ],
+      "avg_exp_level": 2.6,
+      "avg_salary": 140000,
+      "total_postings": 396
+    },
+    "Data Scientist": {
+      "required_tech": [
+        "machine learning",
+        "statistical analysis",
+        "sql",
+        "data analysis",
+        "data engineering",
+        "cloud computing",
+        "natural language processing",
+        "data visualization",
+        "deep learning"
+      ],
+      "required_prog": [
+        "python",
+        "r"
+      ],
+      "required_soft": [
+        "communication",
+        "creativity",
+        "teamwork",
+        "collaboration",
+        "project management",
+        "problem solving",
+        "presentation",
+        "leadership",
+        "analytical thinking"
+      ],
+      "required_tools": [
+        "excel",
+        "aws",
+        "spark",
+        "git",
+        "tableau",
+        "pytorch",
+        "tensorflow"
+      ],
+      "avg_exp_level": 2.3,
+      "avg_salary": 162200,
+      "total_postings": 247
+    },
+    "Software Developer": {
+      "required_tech": [
+        "cloud computing",
+        "sql",
+        "devops",
+        "model deployment",
+        "api development"
+      ],
+      "required_prog": [
+        "javascript",
+        "java",
+        "python",
+        "go",
+        "typescript"
+      ],
+      "required_soft": [
+        "project management",
+        "communication",
+        "problem solving",
+        "creativity",
+        "teamwork",
+        "collaboration",
+        "leadership",
+        "adaptability"
+      ],
+      "required_tools": [
+        "git",
+        "excel",
+        "aws",
+        "azure",
+        "docker",
+        "kubernetes"
+      ],
+      "avg_exp_level": 2.6,
+      "avg_salary": 150800,
+      "total_postings": 2002
+    }
+  },
+  "category_thresholds": {
+    "Business Analyst": {
+      "q33": 0.0,
+      "q66": 1.0
+    },
+    "Cloud / DevOps": {
+      "q33": 3.0,
+      "q66": 5.0
+    },
+    "Cybersecurity": {
+      "q33": 2.0,
+      "q66": 3.0
+    },
+    "Data Analyst": {
+      "q33": 2.0,
+      "q66": 4.0
+    },
+    "Data Engineer": {
+      "q33": 5.0,
+      "q66": 7.0
+    },
+    "Data Scientist / ML": {
+      "q33": 6.0,
+      "q66": 8.0
+    },
+    "Software Developer": {
+      "q33": 3.0,
+      "q66": 5.0
+    },
+    "__global__": {
+      "q33": 3.0,
+      "q66": 5.0
+    }
+  }
+}

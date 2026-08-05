@@ -1,0 +1,6 @@
+loading csv...
+csv loaded, rows=123849
+Tech postings: 4416
+Train: 3090  Val: 663  Test: 663
+
+=== Starting checklist agent on all 663 test rows ===
