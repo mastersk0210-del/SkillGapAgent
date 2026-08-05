@@ -323,6 +323,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_CANDIDATES = [
     os.path.join(SCRIPT_DIR, "postings.csv"),
 ]
+BENCHMARKS_FILE = os.path.join(SCRIPT_DIR, "agent_benchmarks.json")
 TENSORX_BASE_URL = "https://api.tensorx.ai/v1"
 MODEL = "deepseek/deepseek-v4-flash"
 TRUNC_LEN = 3400  # bounded extraction window — mirrors skill_gap_agent_analysis.ipynb
@@ -353,6 +354,13 @@ def load_benchmarks():
     - career_profiles: required skills per UI career (8-way), for the CV comparison UI
     - category_thresholds: q33/q66 total_skills per job_category (7-way), for the agent tool
     """
+    # Load pre-computed benchmarks (used in deployment — no CSV needed)
+    if os.path.exists(BENCHMARKS_FILE):
+        with open(BENCHMARKS_FILE, "r") as f:
+            data = json.load(f)
+        return data["career_profiles"], data["category_thresholds"]
+
+    # Fallback: compute from raw CSV if available locally
     data_file = next((p for p in DATA_CANDIDATES if os.path.exists(p)), None)
     if data_file is None:
         st.error(
