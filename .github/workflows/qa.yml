@@ -1,0 +1,58 @@
+name: QA
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  dependency-check:
+    name: Verify requirements.txt installs and imports resolve
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install requirements.txt fresh
+        run: pip install -r requirements.txt
+      - name: Verify every import agent_app.py uses actually resolves
+        run: |
+          python -c "
+          import streamlit
+          import pandas
+          import plotly.graph_objects
+          import pdfplumber
+          from docx import Document
+          from openai import OpenAI
+          print('All imports OK')
+          "
+      - name: Syntax-check agent_app.py
+        run: python -m py_compile agent_app.py
+
+  live-app-check:
+    name: Check the deployed app for error states
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: Load live app and check for errors
+        env:
+          APP_URL: https://skillgapagent-mastersk07.streamlit.app/
+        run: python .github/scripts/check_live_app.py
+      - name: Upload screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-app-screenshot
+          path: live_app_screenshot.png
+          retention-days: 14
