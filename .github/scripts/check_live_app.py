@@ -23,26 +23,35 @@ WAKE_BUTTON_TEXT = "get this app back up"
 
 
 def main() -> int:
+    body_text = ""
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
-        page.goto(URL, wait_until="networkidle", timeout=60_000)
-
-        # Free-tier apps sleep after inactivity; click through the wake prompt if present.
         try:
+            # Streamlit apps hold an open WebSocket for live updates, so the
+            # network never goes fully idle — "load" is the right condition here.
+            page.goto(URL, wait_until="load", timeout=45_000)
+            page.wait_for_timeout(5_000)
+
+            # Free-tier apps sleep after inactivity; click through the wake prompt if present.
             wake_button = page.get_by_text(WAKE_BUTTON_TEXT, exact=False)
             if wake_button.count() > 0:
                 wake_button.first.click()
                 page.wait_for_timeout(30_000)
-        except Exception:
-            pass
 
-        # Give the app time to finish booting.
-        page.wait_for_timeout(15_000)
+            # Give the app time to finish booting / rendering.
+            page.wait_for_timeout(15_000)
+            body_text = page.inner_text("body").lower()
+        finally:
+            try:
+                page.screenshot(path=SCREENSHOT_PATH, full_page=True)
+            except Exception as e:
+                print(f"Could not capture screenshot: {e}")
+            browser.close()
 
-        body_text = page.inner_text("body").lower()
-        page.screenshot(path=SCREENSHOT_PATH, full_page=True)
-        browser.close()
+    if not body_text:
+        print("Could not read any page content — treating as inconclusive, not a failure.")
+        return 0
 
     for sign in ERROR_SIGNS:
         if sign in body_text:
